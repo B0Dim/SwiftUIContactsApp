@@ -12,11 +12,9 @@ struct ContactListView: View {
     var body: some View {
         NavigationView {
             List(persons) { person in
-                HStack {
-                    NavigationLink(
-                        person.fullName,
-                        destination: AboutPersonView(person: person))
-                }
+                NavigationLink(
+                    person.fullName,
+                    destination: AboutPersonView(person: person))
             }
             .listStyle(.plain)
             .navigationTitle("Contacts")
