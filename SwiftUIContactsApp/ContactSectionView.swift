@@ -24,6 +24,7 @@ struct ContactSectionView: View {
                         Text(person.email)
                     }
                 }
+                .textCase(.none)
             }
             .navigationBarTitle("Most Viewed")
         }
