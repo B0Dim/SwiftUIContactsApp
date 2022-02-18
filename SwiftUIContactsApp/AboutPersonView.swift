@@ -21,15 +21,8 @@ struct AboutPersonView: View {
                     .padding()
                 Spacer()
             }
-            HStack {
-                Image(systemName: "phone")
-                Text(person.phone)
-            }
-            HStack {
-                Image(systemName: "tray")
-                Text(person.email)
-            }
-            
+            Label(person.phone, systemImage: "phone")
+            Label(person.email, systemImage: "tray")
         }
         .navigationTitle(person.fullName)
     }

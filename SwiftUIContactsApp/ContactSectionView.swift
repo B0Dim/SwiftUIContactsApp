@@ -15,14 +15,8 @@ struct ContactSectionView: View {
         NavigationView {
             List(persons) { person in
                 Section(header: Text(person.fullName).font(.subheadline)) {
-                    HStack {
-                        Image(systemName: "phone")
-                        Text(person.phone)
-                    }
-                    HStack {
-                        Image(systemName: "tray")
-                        Text(person.email)
-                    }
+                    Label(person.phone, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
                 }
                 .textCase(.none)
             }

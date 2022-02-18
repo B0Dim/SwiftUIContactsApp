@@ -61,6 +61,7 @@
 		0810C37627BCCE9200FF84C4 /* SwiftUIContactsApp */ = {
 			isa = PBXGroup;
 			children = (
+				0838589F27BF6D3700D01DC5 /* Data */,
 				0810C38527BCCEA000FF84C4 /* Models */,
 				0810C37727BCCE9200FF84C4 /* SwiftUIContactsAppApp.swift */,
 				0810C37927BCCE9200FF84C4 /* ContentView.swift */,
@@ -84,10 +85,17 @@
 		0810C38527BCCEA000FF84C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0810C38727BCCEAF00FF84C4 /* DataManager.swift */,
 				0810C38627BCCEAF00FF84C4 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0838589F27BF6D3700D01DC5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0810C38727BCCEAF00FF84C4 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
